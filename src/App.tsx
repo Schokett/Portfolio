@@ -12,13 +12,14 @@ function App() {
               <span className="text-slate-50 font-bold"> Skrollan.</span>
             </span>
             <div className="text-2xl text-slate-50 mt-5 lg:text-4xl lg:mt-10">
-              {/* prettier-ignore */}
               <h1 className="text-3xl lg:text-5xl">
-          Ihre neue<br />
-          <span
-            className="font-bold bg-linear-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
-            Frontend Developerin</span>.
-        </h1>
+                Ihre neue
+                <br />
+                <span className="font-bold bg-linear-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
+                  Frontend Developerin
+                </span>
+                .
+              </h1>
 
               <p className="text-sm mt-6 max-w-prose text-slate-400 w-full lg:text-xl lg:mt-12">
                 Mein Name ist Skrollan Elena Hyodo und ich bin eine Softwareentwicklerin mit
