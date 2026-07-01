@@ -9,7 +9,7 @@ function App() {
             <img src="/portrae.jpeg" alt="" className="rounded-full w-34 mb-5 lg:mb-10" />
             <span className="text-sm mt-5 text-slate-200 lg:text-2xl lg:mt-10">
               Hi, ich bin
-              <span className="text-slate-50 font-bold">Skrollan.</span>
+              <span className="text-slate-50 font-bold"> Skrollan.</span>
             </span>
             <div className="text-2xl text-slate-50 mt-5 lg:text-4xl lg:mt-10">
               {/* prettier-ignore */}
