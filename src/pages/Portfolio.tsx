@@ -55,12 +55,12 @@ function Portfolio() {
               <img
                 src="/Portfolio/portrae.jpeg"
                 alt=""
-                className="rounded-full w-40 lg:mb-10"
+                className="rounded-full w-40 lg:mb-10 border-1 border-cyan-300"
                 style={{
                   filter:
-                    "drop-shadow(0 0 2px rgba(59,130,246,0.7)) drop-shadow(0 0 1px rgba(45,212,191,0.6)) drop-shadow(0 0 30px rgba(45,212,191,0.4))",
+                    "drop-shadow(0 0 10px rgba(59,130,246,0.7)) drop-shadow(0 0 1px rgba(45,212,191,0.6)) drop-shadow(0 0 30px rgba(45,212,191,0.4))",
                 }}></img>
-              <div className="text-2xl text-slate-50 mt-10 lg:text-4xl lg:mt-10">
+              <div className="text-2xl text-slate-50 mt-10 lg:text-4xl lg:mt-10 ">
                 <h1 className="text-3xl lg:text-5xl">
                   Skrollan
                   <br />
@@ -75,7 +75,7 @@ function Portfolio() {
                 </h1>
 
                 <div className="grid justify-center grid-cols-2 sm:grid-cols-4 mt-5 gap-1">
-                  <div className="border-1 border-slate-700 rounded-lg flex p-2 gap-2  w-full mx-auto justify-center items-center">
+                  <div className="border-1 border-slate-700 rounded-lg flex p-2 gap-2  w-full mx-auto justify-center items-center ">
                     <img
                       src="/Portfolio/330px-React-icon.svg.webp"
                       alt="react-logo"
@@ -109,14 +109,14 @@ function Portfolio() {
                   </div>
                 </div>
 
-                <div className="border-t-1 border-b-1 p-7 mt-10 border-slate-700 ">
-                  <p className="text-sm  max-w-prose text-slate-400 w-full lg:text-xl lg:mt-12">
+                <div className="border-t-1 border-b-1 p-7 mt-10 lg:p-14 border-slate-700 ">
+                  <p className="text-sm text-slate-400 w-full lg:text-xl ">
                     Ich bin eine Softwareentwicklerin mit Schwerpunkt auf den Bereich
                     Frontend-Web-Development. Ich liebe Es neue Dinge zu gestalten und Ideen in
                     echte Projekte umzusetzen.
                   </p>
                 </div>
-                <div className="flex flex-col items-center lg:ml-2 lg:mb-4 lg:flex-row lg:gap-4  lg:mt-30">
+                <div className="flex flex-col items-center lg:items-start lg:mb-4  lg:gap-4  lg:mt-15">
                   <div className="flex gap-4 mt-15 justify-center text-center lg:mt-0">
                     <Icons href="https://www.linkedin.com/in/skrollan" path={linkedinPath} />
                     <Icons href="https://github.com/Skrollan" path={githubPath} />
@@ -126,7 +126,7 @@ function Portfolio() {
                     label="Projekte ansehen"
                     targetId="projekte"
                     icon={ArrowDownIcon}
-                    className="mt-10 lg:mt-0"
+                    className="mt-10 lg:mt-10"
                   />
                 </div>
               </div>
