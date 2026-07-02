@@ -1,16 +1,17 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Impressum from "./pages/Impressum";
+import Portfolio from "./pages/Portfolio";
 
 const router = createBrowserRouter(
   [
     {
       path: "/",
       element: <App />,
-    },
-    {
-      path: "/impressum",
-      element: <Impressum />,
+      children: [
+        { index: true, element: <Portfolio /> },
+        { path: "impressum", element: <Impressum /> },
+      ],
     },
   ],
   { basename: "/Portfolio/" },

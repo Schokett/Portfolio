@@ -32,7 +32,11 @@ function Button({ label, targetId, href, onClick, className = "", icon }: Button
   return (
     <button
       onClick={handleClick}
-      className={`bg-blue-600 rounded-lg p-3 mt-10 flex items-center text-sm gap-2 font-semibold lg:mt-12 cursor-pointer ${className}`}>
+      className={`bg-cyan-500 rounded-lg p-3 flex items-center text-sm gap-2 font-semibold cursor-pointer ${className}`}
+      style={{
+        filter:
+          "drop-shadow(0 0 2px rgba(59,130,246,0.7)) drop-shadow(0 0 1px rgba(45,212,191,0.6)) drop-shadow(0 0 30px rgba(45,212,191,0.4))",
+      }}>
       {label}
       {icon}
     </button>

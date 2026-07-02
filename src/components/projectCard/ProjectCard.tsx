@@ -58,7 +58,12 @@ function ProjekteCard({
           </div>
         ))}
       </div>
-      <Button label="Code ansehen" href={linkBtn} icon={ArrowToRightIcon} />
+      <Button
+        label="Code ansehen"
+        href={linkBtn}
+        icon={ArrowToRightIcon}
+        className="mt-10 lg:mt-12"
+      />
     </div>
   );
 }
