@@ -51,7 +51,7 @@ function App() {
       <section className="flex flex-col p-5 lg:p-20">
         <div className="flex flex-col gap-20 lg:flex-row lg:justify-between lg:items-center">
           <div className="">
-            <img src="/portrae.jpeg" alt="" className="rounded-full w-34 mb-5 lg:mb-10" />
+            <img src="./portrae.jpeg" alt="" className="rounded-full w-34 mb-5 lg:mb-10" />
             <span className="text-sm mt-5 text-slate-200 lg:text-2xl lg:mt-10">
               Hi, ich bin
               <span className="text-slate-50 font-bold"> Skrollan.</span>
@@ -78,7 +78,7 @@ function App() {
             </div>
           </div>
           <div className="lg:w-200 xl:w-140">
-            <img src="/files_techs.webp" alt="Web Technologien" className="max-w-full h-auto" />
+            <img src="./files_techs.webp" alt="Web Technologien" className="max-w-full h-auto" />
           </div>
         </div>
       </section>
@@ -93,8 +93,8 @@ function App() {
         </div>
         <div className="flex flex-col text-slate-50 gap-20 lg:flex-row lg:gap-10 lg:m-20">
           <ProjekteCard
-            image="/wetterApp.png"
-            title="Mobile Wetter App"
+            image="./wetterApp.png"
+            title="Mobile Wetter WebApp"
             imageAlt="WetterApp Preview Bild"
             link="https://schokett.github.io/WetterApp/"
             linkLabel="schokett.github.io/WetterApp/"
@@ -104,18 +104,18 @@ function App() {
             linkBtn="https://github.com/Schokett/WetterApp"
           />
           <ProjekteCard
-            image="/witzeApp.png"
-            title="Kreative Witze App"
+            image="./witzeApp.png"
+            title="Kreative Witze WebApp"
             imageAlt="WitzeApp Preview Bild"
             link="https://schokett.github.io/witzeApp/"
-            linkLabel="schokett.github.io/WetterApp/"
+            linkLabel="schokett.github.io/witzeApp/"
             svgIcon={LinkIcon}
             description={JokeDescription}
             technologies={["HTML", "JavaScript", "Vite", "SCSS", "BEM", "AJAX"]}
             linkBtn="https://github.com/Schokett/witzeApp"
           />
           <ProjekteCard
-            image="/userApplication.png"
+            image="./userApplication.png"
             title="Nutzerverwaltung WebApp"
             imageAlt="Nutzerverwaltung WebApp Preview Bild"
             link="https://schokett.github.io/UserApplication/"
