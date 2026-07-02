@@ -1,7 +1,6 @@
 import Button from "../components/button/Button";
 import Footer from "../components/footer/Footer";
 import Icons from "../components/icons/Icons";
-import Techs from "../components/techs/techs";
 import ProjekteCard from "../components/projectCard/ProjectCard";
 import { linkedinPath, githubPath, instagramPath } from "../components/icons/paths";
 
@@ -51,16 +50,19 @@ function Portfolio() {
     <div className="font-sans">
       <section className="flex flex-col p-5  lg:p-20 ">
         <div className="p-[1px] rounded-2xl bg-linear-to-r from-teal-200 to-indigo-300">
-          <div className="flex flex-col gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)]">
+          <div className="flex lg:flex-col lg:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)]">
             <div className="items-center flex flex-col text-center lg:text-left lg:items-start">
-              <img src="/Portfolio/portrae.jpeg" alt="" className="rounded-full w-34 lg:mb-10 " />
-              <span className="text-lg mt-5 text-slate-200 lg:text-2xl lg:mt-10">
-                Hi, ich bin
-                <span className="text-slate-50 font-bold"> Skrollan.</span>
-              </span>
-              <div className="text-2xl text-slate-50 mt-5 lg:text-4xl lg:mt-10">
+              <img
+                src="/Portfolio/portrae.jpeg"
+                alt=""
+                className="rounded-full w-40 lg:mb-10"
+                style={{
+                  filter:
+                    "drop-shadow(0 0 2px rgba(59,130,246,0.7)) drop-shadow(0 0 1px rgba(45,212,191,0.6)) drop-shadow(0 0 30px rgba(45,212,191,0.4))",
+                }}></img>
+              <div className="text-2xl text-slate-50 mt-10 lg:text-4xl lg:mt-10">
                 <h1 className="text-3xl lg:text-5xl">
-                  Ihre neue
+                  Skrollan
                   <br />
                   <span
                     className="font-bold bg-linear-to-r from-emerald-500 to-cyan-300 bg-clip-text text-transparent"
@@ -68,16 +70,52 @@ function Portfolio() {
                       filter:
                         "drop-shadow(0 0 2px rgba(59,130,246,0.7)) drop-shadow(0 0 1px rgba(45,212,191,0.6)) drop-shadow(0 0 30px rgba(45,212,191,0.4))",
                     }}>
-                    Frontend Developerin
+                    Frontend Developerin.
                   </span>
-                  .
                 </h1>
 
-                <p className="text-sm mt-6 max-w-prose text-slate-400 w-full lg:text-xl lg:mt-12">
-                  Ich bin eine Softwareentwicklerin mit Schwerpunkt auf den Bereich
-                  Frontend-Web-Development. Ich liebe Es neue Dinge zu gestalten und Ideen in echte
-                  Projekte umzusetzen.
-                </p>
+                <div className="grid justify-center grid-cols-2 sm:grid-cols-4 mt-5 gap-1">
+                  <div className="border-1 border-slate-700 rounded-lg flex p-2 gap-2  w-full mx-auto justify-center items-center">
+                    <img
+                      src="/Portfolio/330px-React-icon.svg.webp"
+                      alt="react-logo"
+                      className=" w-6 h-6 object-contain"
+                    />
+                    <span className="text-xs text-slate-200">React</span>
+                  </div>
+                  <div className="border-1 border-slate-700 rounded-lg flex p-2 gap-2  w-full mx-auto justify-center items-center ">
+                    <img
+                      src="/Portfolio/ts-logo-128.png"
+                      alt="typescript-logo"
+                      className="w-6 h-6 object-contain"
+                    />
+                    <span className="text-xs text-slate-200">TypeScript</span>
+                  </div>
+                  <div className="border-1 border-slate-700 rounded-lg flex p-2 gap-2  w-full mx-auto justify-center items-center ">
+                    <img
+                      src="/Portfolio/tailwindcss-mark.0~s.iziag2xd..svg"
+                      alt="tailwind-logo"
+                      className=" w-6 h-6 object-contain"
+                    />
+                    <span className="text-xs text-slate-200">Tailwind CSS</span>
+                  </div>
+                  <div className="border-1 border-slate-700 rounded-lg flex p-2 gap-2 w-full mx-auto justify-center items-center ">
+                    <img
+                      src="/Portfolio/js.png"
+                      alt="javascript-logo"
+                      className=" w-6 h-6 object-contain"
+                    />
+                    <span className="text-xs text-slate-200">JavaScript</span>
+                  </div>
+                </div>
+
+                <div className="border-t-1 border-b-1 p-7 mt-10 border-slate-700 ">
+                  <p className="text-sm  max-w-prose text-slate-400 w-full lg:text-xl lg:mt-12">
+                    Ich bin eine Softwareentwicklerin mit Schwerpunkt auf den Bereich
+                    Frontend-Web-Development. Ich liebe Es neue Dinge zu gestalten und Ideen in
+                    echte Projekte umzusetzen.
+                  </p>
+                </div>
                 <div className="flex flex-col items-center lg:ml-2 lg:mb-4 lg:flex-row lg:gap-4  lg:mt-30">
                   <div className="flex gap-4 mt-15 justify-center text-center lg:mt-0">
                     <Icons href="https://www.linkedin.com/in/skrollan" path={linkedinPath} />
@@ -93,10 +131,7 @@ function Portfolio() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-200 xl:w-140 ">
-              <Techs />
-              {/* <img src="./files_techs.webp" alt="Web Technologien" className="max-w-full h-auto " /> */}
-            </div>
+            <div className="lg:w-200 xl:w-140 "></div>
           </div>
         </div>
       </section>

@@ -1,17 +1,26 @@
 function Techs() {
   return (
-    <div>
-      <img src="/portfolio/public/330px-React-icon.svg.webp" alt="react-logo" className="w-12" />
-      <img src="/portfolio/public/Git-Icon-1788C.png" alt="git-logo" className="w-12" />
-      <img src="/portfolio/public/HTML5_Badge_128.png" alt="html-logo" className="absolute w-12" />
-      <img src="/portfolio/public/js.png" alt="javascript-logo" className="absolute w-12" />
-      <img src="/portfolio/public/seal-color.png" alt="plexus-shape" className="absolute w-12" />
+    <div className="absolute inset-0 pointer-events-none z-10">
       <img
-        src="/portfolio/public/tailwindcss-mark.0~s.iziag2xd..svg"
-        alt="plexus-shape"
-        className="absolute w-12"
+        src="/Portfolio/330px-React-icon.svg.webp"
+        alt="react-logo"
+        className="absolute w-10 top-[5%] -rotate-6 left-[25%]"
       />
-      <img src="/portfolio/public/ts-logo-128.png" alt="plexus-shape" className="absolute w-12" />
+      <img
+        src="/Portfolio/js.png"
+        alt="javascript-logo"
+        className="absolute w-9 top-[5%] rotate-6 right-[10%]"
+      />
+      <img
+        src="/Portfolio/tailwindcss-mark.0~s.iziag2xd..svg"
+        alt="tailwind-logo"
+        className="absolute w-10 top-[5%] -rotate-8 right-[10%]"
+      />
+      <img
+        src="/Portfolio/ts-logo-128.png"
+        alt="typescript-logo"
+        className="absolute w-9 top-[5%] -rotate-6 left-[10%]"
+      />
     </div>
   );
 }
