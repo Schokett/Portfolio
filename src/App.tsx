@@ -48,37 +48,44 @@ function App() {
   );
   return (
     <div className="font-sans bg-slate-950">
-      <section className="flex flex-col p-5 lg:p-20">
-        <div className="flex flex-col gap-20 lg:flex-row lg:justify-between lg:items-center">
-          <div className="">
-            <img src="./portrae.jpeg" alt="" className="rounded-full w-34 mb-5 lg:mb-10" />
-            <span className="text-sm mt-5 text-slate-200 lg:text-2xl lg:mt-10">
-              Hi, ich bin
-              <span className="text-slate-50 font-bold"> Skrollan.</span>
-            </span>
-            <div className="text-2xl text-slate-50 mt-5 lg:text-4xl lg:mt-10">
-              <h1 className="text-3xl lg:text-5xl">
-                Ihre neue
-                <br />
-                <span className="font-bold bg-linear-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
-                  Frontend Developerin
-                </span>
-                .
-              </h1>
+      <section className="flex flex-col p-5  lg:p-20 ">
+        <div className="p-[1px] rounded-2xl bg-linear-to-r from-teal-200 to-indigo-300">
+          <div className="flex flex-col gap-20 p-3 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)]">
+            <div className="items-center flex flex-col text-center lg:text-left lg:items-start">
+              <img src="./portrae.jpeg" alt="" className="rounded-full w-34 lg:mb-10 " />
+              <span className="text-lg mt-5 text-slate-200 lg:text-2xl lg:mt-10">
+                Hi, ich bin
+                <span className="text-slate-50 font-bold"> Skrollan.</span>
+              </span>
+              <div className="text-2xl text-slate-50 mt-5 lg:text-4xl lg:mt-10">
+                <h1 className="text-3xl lg:text-5xl">
+                  Ihre neue
+                  <br />
+                  <span
+                    className="font-bold bg-linear-to-r from-emerald-500 to-cyan-300 bg-clip-text text-transparent"
+                    style={{
+                      filter:
+                        "drop-shadow(0 0 2px rgba(59,130,246,0.7)) drop-shadow(0 0 1px rgba(45,212,191,0.6)) drop-shadow(0 0 30px rgba(45,212,191,0.4))",
+                    }}>
+                    Frontend Developerin
+                  </span>
+                  .
+                </h1>
 
-              <p className="text-sm mt-6 max-w-prose text-slate-400 w-full lg:text-xl lg:mt-12">
-                Mein Name ist Skrollan Elena Hyodo und ich bin eine Softwareentwicklerin mit
-                Schwerpunkt auf den Bereich Frontend-Web-Development und komme aus dem Norden
-                Deutschlands. Ich liebe Es neue Dinge zu gestalten und meine Ideen in die Tat
-                umzusetzen.
-              </p>
-
-              <Icons />
-              <Button label="Projekte ansehen" targetId="projekte" icon={ArrowDownIcon} />
+                <p className="text-sm mt-6 max-w-prose text-slate-400 w-full lg:text-xl lg:mt-12">
+                  Ich bin eine Softwareentwicklerin mit Schwerpunkt auf den Bereich
+                  Frontend-Web-Development. Ich liebe Es neue Dinge zu gestalten und Ideen in echte
+                  Projekte umzusetzen.
+                </p>
+                <div className="flex flex-col items-center">
+                  <Icons />
+                  <Button label="Projekte ansehen" targetId="projekte" icon={ArrowDownIcon} />
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="lg:w-200 xl:w-140">
-            <img src="./files_techs.webp" alt="Web Technologien" className="max-w-full h-auto" />
+            <div className="lg:w-200 xl:w-140 ">
+              <img src="./files_techs.webp" alt="Web Technologien" className="max-w-full h-auto " />
+            </div>
           </div>
         </div>
       </section>
