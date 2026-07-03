@@ -50,7 +50,24 @@ function Portfolio() {
     <div className="font-sans">
       <section className="flex flex-col p-5  lg:p-20 ">
         <div className="p-[1px] rounded-2xl bg-linear-to-r from-teal-200 to-indigo-300">
-          <div className="flex lg:flex-col lg:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)]">
+          <div className="relative overflow-hidden flex lg:flex-col lg:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)]">
+            <img
+              src="cirle.svg"
+              alt="cirle-background"
+              className="absolute -bottom-15 -left-25 w-55 pointer-events-none select-none opacity-75"
+            />
+            <img
+              src="grid.svg"
+              alt="grid-background"
+              className="absolute top-5 -left-20 w-55 pointer-events-none select-none opacity-70"
+            />
+            <img
+              src="polygons.png"
+              alt="polygons-background"
+              className="absolute top-5 -right-45 w-70 pointer-events-none select-none opacity-40"
+            />
+            <div className="top-20 -left-50 bg-radial from-fuchsia-500/50 via-violet-400/30 absolute rounded-full w-96 h-96 pointer-events-none select-none blur-3xl opacity-40"></div>
+            <div className="-bottom-20 -right-50 bg-radial from-fuchsia-500/50 via-violet-400/30 absolute rounded-full w-96 h-96 pointer-events-none select-none blur-3xl opacity-40"></div>
             <div className="items-center flex flex-col text-center lg:text-left lg:items-start">
               <img
                 src="/Portfolio/portrae.jpeg"
@@ -74,8 +91,8 @@ function Portfolio() {
                   </span>
                 </h1>
 
-                <div className="grid justify-center grid-cols-2 sm:grid-cols-4 mt-5 gap-1">
-                  <div className="border-1 border-slate-700 rounded-lg flex p-2 gap-2  w-full mx-auto justify-center items-center ">
+                <div className="flex flex-wrap justify-center mt-5 gap-1">
+                  <div className="border border-slate-700 rounded-lg flex p-2 gap-2 items-center">
                     <img
                       src="/Portfolio/330px-React-icon.svg.webp"
                       alt="react-logo"
@@ -83,7 +100,7 @@ function Portfolio() {
                     />
                     <span className="text-xs text-slate-200">React</span>
                   </div>
-                  <div className="border-1 border-slate-700 rounded-lg flex p-2 gap-2  w-full mx-auto justify-center items-center ">
+                  <div className="border border-slate-700 rounded-lg flex p-2 gap-2 items-center">
                     <img
                       src="/Portfolio/ts-logo-128.png"
                       alt="typescript-logo"
@@ -91,7 +108,7 @@ function Portfolio() {
                     />
                     <span className="text-xs text-slate-200">TypeScript</span>
                   </div>
-                  <div className="border-1 border-slate-700 rounded-lg flex p-2 gap-2  w-full mx-auto justify-center items-center ">
+                  <div className="border border-slate-700 rounded-lg flex p-2 gap-2 items-center">
                     <img
                       src="/Portfolio/tailwindcss-mark.0~s.iziag2xd..svg"
                       alt="tailwind-logo"
@@ -99,7 +116,7 @@ function Portfolio() {
                     />
                     <span className="text-xs text-slate-200">Tailwind CSS</span>
                   </div>
-                  <div className="border-1 border-slate-700 rounded-lg flex p-2 gap-2 w-full mx-auto justify-center items-center ">
+                  <div className="border border-slate-700 rounded-lg flex p-2 gap-2 items-center">
                     <img
                       src="/Portfolio/js.png"
                       alt="javascript-logo"
