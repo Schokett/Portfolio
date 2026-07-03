@@ -11,7 +11,7 @@ function Icons({ href, path, gradientFrom = "#a855f7", gradientTo = "#2dd4bf" }:
   const gradientId = useId();
 
   return (
-    <div className="group relative flex items-center justify-center bg-slate-800 rounded-xl p-3 transition hover:bg-slate-700">
+    <div className="group relative flex items-center justify-center bg-slate-800 rounded-xl p-3 transition hover:bg-slate-700 ">
       <svg
         className="absolute inset-0 h-full w-full pointer-events-none"
         viewBox="0 0 100 100"

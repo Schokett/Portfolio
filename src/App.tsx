@@ -8,12 +8,12 @@ function App() {
         <img
           src="/Portfolio/plexus.svg"
           alt="plexus-shape"
-          className="absolute w-60 -right-10 mt-20 lg:w-160 lg:mt-20 lg:-right-15"
+          className="absolute w-110 -right-40 top-10 lg:w-120 lg:top-10 lg:-right-40 opacity-60"
         />
         <img
-          src="/Portfolio/zahnrad.png"
-          alt="plexus-shape"
-          className="absolute w-30 -left-10 mt-140 lg:w-60 lg:mt-170 lg:-left-20"
+          src="/Portfolio/gearwheel.png"
+          alt="gearwheel"
+          className="absolute w-70 -left-25 -bottom-35 lg:w-90 lg:-bottom-30 lg:-left-25 opacity-35"
         />
       </div>
       <Outlet />
