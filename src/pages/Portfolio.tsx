@@ -2,24 +2,16 @@ import Button from "../components/button/Button";
 import Footer from "../components/footer/Footer";
 import Icons from "../components/icons/Icons";
 import ProjekteCard from "../components/projectCard/ProjectCard";
-import { linkedinPath, githubPath, instagramPath } from "../components/icons/paths";
+import {
+  linkedinPath,
+  githubPath,
+  instagramPath,
+  ArrowDownIcon,
+  FolderIcon,
+  LinkIcon,
+} from "../components/icons/paths";
 
 function Portfolio() {
-  const LinkIcon = (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      className="size-6">
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-      />
-    </svg>
-  );
   const WeatherDescription = `Meine mobile Wetter App zeigt aktuelle Wetterdaten für Städte auf der ganzen Welt an.
             Die App wurde "mobile-first" entwickelt und für Mobilgeräte aller Art optimiert. Der
             Nutzer hat die Möglichkeit, Orte in einer Favoritenliste zu speichern und diese Liste zu
@@ -31,21 +23,7 @@ function Portfolio() {
             Practices optimiert.`;
   const UserAppDescription = `Mit der UserApplication kannst du Benutzerprofile anlegen, bearbeiten und in einer Übersicht ansehen. 
             Jedes Profil enthält Angaben wie Name, Geburtsdatum, Geschlecht, E-Mail, Telefonnummer, Adresse, Webseite und optional ein Profilbild.`;
-  const ArrowDownIcon = (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="2"
-      stroke="currentColor"
-      className="size-5">
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-      />
-    </svg>
-  );
+
   return (
     <div className="font-sans">
       <section className="flex flex-col p-5  lg:p-20 ">
@@ -143,6 +121,7 @@ function Portfolio() {
                     label="Projekte ansehen"
                     targetId="projekte"
                     icon={ArrowDownIcon}
+                    secendIcon={FolderIcon}
                     className="mt-10 lg:mt-10"
                   />
                 </div>
