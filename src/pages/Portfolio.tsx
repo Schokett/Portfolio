@@ -49,7 +49,6 @@ function Portfolio() {
 
             {/* content */}
             {/* Linke Seite */}
-            {/* <div className="items-center flex flex-col text-center xl:text-left xl:items-start xl:flex-row xl:gap-35"> */}
             <div className="xl:w-1/20"></div>
             <div className="xl:w-2/5">
               {/* Bild */}
@@ -57,7 +56,7 @@ function Portfolio() {
                 <img
                   src="/Portfolio/portrae.jpeg"
                   alt=""
-                  className="rounded-full w-40 lg:mb-10 border-1 border-cyan-300  mb-10"
+                  className="rounded-full w-40 lg:mb-10 border-1 border-cyan-300 mb-10"
                   style={{
                     filter:
                       "drop-shadow(0 0 10px rgba(59,130,246,0.7)) drop-shadow(0 0 1px rgba(45,212,191,0.6)) drop-shadow(0 0 30px rgba(45,212,191,0.4))",
