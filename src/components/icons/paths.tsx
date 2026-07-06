@@ -79,7 +79,7 @@ export const arrowIcon = (
     viewBox="0 0 24 24"
     stroke-width="2"
     stroke="currentColor"
-    className="size-5 text-blue-300 ml-3">
+    className="size-5 text-teal-400 ml-3 ">
     <path
       stroke-linecap="round"
       stroke-linejoin="round"

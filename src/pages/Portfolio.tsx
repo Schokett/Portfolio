@@ -258,75 +258,15 @@ function Portfolio() {
         </div>
       </section>
 
-      <section className="lg:flex lg:m-20 lg:gap-10">
-        <div className=" text-slate-50 flex flex-col mt-40 justify-center items-center text-center p-8 order-2 backdrop-blur-lg rounded-2xl">
-          <h2 className="text-3xl font-bold lg:text-4xl">Weitere Erfahrungen</h2>
-          <p className="text-slate-400 text-base mt-5 lg:text-xl">
-            Auf meinem GitHub-Profil finden Sie weitere Projekte, die ich im Laufe der Zeit erstellt
-            habe. Dort können Sie sich auch selbst von meinem Code überzeugen.
-          </p>
-          <a
-            href="https://github.com/Schokett"
-            className="bg-blue-600 rounded-lg p-3 mt-10 flex gap-1 w-full text-sm justify-center items-center font-semibold lg:text-xl text-slate-50">
-            GitHub ansehen
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2.5"
-              stroke="currentColor"
-              className="size-5">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <div className="text-slate-50 flex flex-col mt-40 p-8 order-1" id="contact">
-          <h2 className="font-bold text-3xl lg:text-4xl">Noch Fragen?</h2>
-          <p className="text-slate-400 mt-5 lg:text-xl">
-            Zögern Sie nicht mich zu kontaktieren. Nutzen Sie dafür gerne die unten aufgeführte
-            E-Mail Adresse oder schauen Sie auf meinen Social-Media-Profilen vorbei!
-          </p>
-          <a
-            href="mailto:skrollanelenazimmermann@gmail.com"
-            className="text-blue-500 flex items-center gap-2 mt-5 font-bold lg:text-xl">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2.5"
-              stroke="currentColor"
-              className="size-5">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-              />
-            </svg>
-            skrollanelenazimmermann@gmail.com
-          </a>
-
-          <div className="flex gap-4 mt-5 justify-start lg:mt-10">
-            <Icons href="https://www.linkedin.com/in/skrollan" path={linkedinPath} />
-            <Icons href="https://github.com/Skrollan" path={githubPath} />
-            <Icons href="https://www.instagram.com/skrollan" path={instagramPath} />
-          </div>
-        </div>
-      </section>
-
-      <section className="flex flex-row gap-5 p-5 lg:p-5 m-20">
-        <div className=" w-2/5 p-[1px] rounded-2xl bg-linear-to-r from-cyan-500/80 to-indigo-300/60">
-          <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)] h-full">
+      <section className="flex flex-col xl:flex-row gap-5 p-5 lg:p-5 m-5 xl:m-20 justify-center ">
+        <div className=" w-full xl:w-8/20 p-[2px] rounded-2xl bg-linear-135 from-cyan-500/80 from-10% to-slate-500/40 to-50%">
+          <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.cyan.500/40%),inset_-8px_0_12px_-10px_theme(colors.indigo.300/30%)] h-full">
             <img
               src="grid.svg"
               alt="grid-background"
-              className="absolute top-5 -right-20 w-55 pointer-events-none select-none opacity-70"
+              className="absolute top-5 -right-20 w-55 pointer-events-none select-none opacity-70 "
             />
-            <div className="top-10 -left-65 bg-radial from-cyan-500/80 to-cyan-400/70 absolute rounded-full w-90 h-100 pointer-events-none select-none blur-3xl opacity-40"></div>
+            <div className="-top-20 -left-20 bg-radial from-cyan-500/25 to-transparent absolute rounded-full w-80 h-80 pointer-events-none select-none blur-3xl"></div>
 
             {/* content */}
             <div className="relative z-10 flex flex-col ">
@@ -358,7 +298,7 @@ function Portfolio() {
                       d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                     />
                   </svg>
-                  skrollanelenazimmermann@gmail.com
+                  <span className="break-all">skrollanelenazimmermann@gmail.com</span>
                   {arrowIcon}
                 </a>
               </div>
@@ -366,7 +306,7 @@ function Portfolio() {
                 Folge mir
               </span>
 
-              <div className="flex gap-4 mt-5 justify-start lg:mt-2">
+              <div className="flex gap-4 mt-5 justify-start lg:mt-2 ">
                 <Icons href="https://www.linkedin.com/in/skrollan" path={linkedinPath} />
                 <Icons href="https://github.com/Skrollan" path={githubPath} />
                 <Icons href="https://www.instagram.com/skrollan" path={instagramPath} />
@@ -376,14 +316,10 @@ function Portfolio() {
           </div>
         </div>
 
-        <div className="w-3/5 p-[1px] rounded-2xl bg-linear-to-r from-teal-200/60 to-violet-500/80">
-          <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)] h-full">
-            <div className="-bottom-60 -right-60 bg-radial from-violet-500/80 to-indigo-400/70 absolute rounded-full w-120 h-140 pointer-events-none select-none blur-3xl opacity-40"></div>
-            <img
-              src="./githubDesigns.svg"
-              alt=""
-              className="absolute w-80 h-auto right-85 top-32"
-            />
+        <div className="w-full xl:w-9/20 p-[2px] rounded-2xl bg-linear-135 from-slate-500/40 from-50% to-purple-400/30 to-70%">
+          <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.teal.200/30%),inset_-8px_0_12px_-10px_theme(colors.fuchsia.500/25%)] h-full">
+            <div className="-bottom-60 -right-70 bg-radial from-purple-500/80 to-fuchsia-500/50 absolute rounded-full w-120 h-140 pointer-events-none select-none blur-3xl opacity-40"></div>
+
             {/* content */}
             <div className="relative z-10 flex flex-col">
               <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">
@@ -406,6 +342,12 @@ function Portfolio() {
                 <span className="ml-auto">{arrowIcon}</span>
               </a>
             </div>
+            <div className="bottom-40 right-50 bg-radial hidden lg:block from-teal-500/80 to-teal-400/70 absolute rounded-full w-30 h-30 pointer-events-none select-none blur-3xl opacity-40"></div>
+            <img
+              src="./githubDesigns.svg"
+              alt=""
+              className="w-80 h-auto right-25 top-35 xl:absolute hidden lg:block"
+            />
 
             {/* content */}
           </div>
