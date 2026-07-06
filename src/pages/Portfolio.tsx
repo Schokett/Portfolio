@@ -10,6 +10,7 @@ import {
   FolderIcon,
   LinkIcon,
 } from "../components/icons/paths";
+import Cube from "../components/cube/Cube";
 
 function Portfolio() {
   const WeatherDescription = `Meine mobile Wetter App zeigt aktuelle Wetterdaten für Städte auf der ganzen Welt an.
@@ -145,8 +146,8 @@ function Portfolio() {
               </div>
             </div>
             {/* Rechte Seite */}
-            <div className="hidden xl:flex xl:w-3/5">
-              <img src="./files_techs.webp" alt="" className="w-150" />
+            <div className="hidden xl:flex xl:w-3/5 justify-center">
+              <Cube />
             </div>
             {/* content end */}
           </div>
