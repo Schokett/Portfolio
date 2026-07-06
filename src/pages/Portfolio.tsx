@@ -11,6 +11,8 @@ import {
   ArrowDownIcon,
   FolderIcon,
   WorldIcon,
+  GitHubIcon,
+  ChatIcon,
 } from "../components/icons/paths";
 import Cube from "../components/cube/Cube";
 
@@ -182,7 +184,7 @@ function Portfolio() {
                   />
                   <Button
                     label="Kontakt"
-                    targetId="projekte"
+                    targetId="contact"
                     className="mt-10 lg:mt-10 bg-slate-950 shadow-amber-950"
                   />
                 </div>
@@ -282,7 +284,7 @@ function Portfolio() {
           </a>
         </div>
 
-        <div className="text-slate-50 flex flex-col mt-40 p-8 order-1">
+        <div className="text-slate-50 flex flex-col mt-40 p-8 order-1" id="contact">
           <h2 className="font-bold text-3xl lg:text-4xl">Noch Fragen?</h2>
           <p className="text-slate-400 mt-5 lg:text-xl">
             Zögern Sie nicht mich zu kontaktieren. Nutzen Sie dafür gerne die unten aufgeführte
@@ -311,6 +313,39 @@ function Portfolio() {
             <Icons href="https://www.linkedin.com/in/skrollan" path={linkedinPath} />
             <Icons href="https://github.com/Skrollan" path={githubPath} />
             <Icons href="https://www.instagram.com/skrollan" path={instagramPath} />
+          </div>
+        </div>
+      </section>
+
+      <section className="flex flex-row gap-5 p-5 lg:p-5 m-20">
+        <div className=" w-2/5 p-[1px] rounded-2xl bg-linear-to-r from-cyan-500/80 to-indigo-300/60">
+          <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)] h-full">
+            <img
+              src="grid.svg"
+              alt="grid-background"
+              className="absolute top-5 -right-20 w-55 pointer-events-none select-none opacity-70"
+            />
+            <div className="top-10 -left-65 bg-radial from-cyan-500/80 to-cyan-400/70 absolute rounded-full w-90 h-100 pointer-events-none select-none blur-3xl opacity-40"></div>
+
+            {/* content */}
+            <div className="flex flex-col">
+              <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">{ChatIcon}</div>
+              <span className="text-teal-300 tracking-widest uppercase text-sm">Kontakt</span>
+            </div>
+            {/* content */}
+          </div>
+        </div>
+
+        <div className="w-3/5 p-[1px] rounded-2xl bg-linear-to-r from-teal-200/60 to-violet-500/80">
+          <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)] h-full">
+            <div className="-bottom-60 -right-60 bg-radial from-violet-500/80 to-indigo-400/70 absolute rounded-full w-120 h-140 pointer-events-none select-none blur-3xl opacity-40"></div>
+
+            {/* content */}
+            <div className="flex flex-col">
+              <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">{GitHubIcon}</div>
+              <span className="text-teal-300 tracking-widest uppercase text-sm">Entdecke Mehr</span>
+            </div>
+            {/* content */}
           </div>
         </div>
       </section>

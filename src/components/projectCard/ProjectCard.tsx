@@ -59,7 +59,7 @@ function ProjekteCard({
         <img
           src={image}
           alt={imageAlt ?? title}
-          className="rounded-xl border border-slate-700/50 w-full max-w-md h-64 object-cover object-top"
+          className="rounded-xl border border-slate-700/50 w-full max-w-md h-64 object-cover object-top mx-auto"
         />
         {feature && (
           <div
