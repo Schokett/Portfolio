@@ -258,9 +258,9 @@ function Portfolio() {
         </div>
       </section>
 
-      <section className="flex flex-col xl:flex-row gap-5 p-5 lg:p-5 m-5 xl:m-20 justify-center ">
+      <section className="flex flex-col xl:flex-row gap-5 p-5 lg:p-5 m-5 xl:m-20 justify-center mt-50">
         <div className=" w-full xl:w-8/20 p-[2px] rounded-2xl bg-linear-135 from-cyan-500/80 from-10% to-slate-500/40 to-50%">
-          <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.cyan.500/40%),inset_-8px_0_12px_-10px_theme(colors.indigo.300/30%)] h-full">
+          <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.cyan.500/40%),inset_-8px_0_12px_-10px_theme(colors.indigo.300/30%)] h-full">
             <img
               src="grid.svg"
               alt="grid-background"
@@ -317,7 +317,7 @@ function Portfolio() {
         </div>
 
         <div className="w-full xl:w-9/20 p-[2px] rounded-2xl bg-linear-135 from-slate-500/40 from-50% to-purple-400/30 to-70%">
-          <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.teal.200/30%),inset_-8px_0_12px_-10px_theme(colors.fuchsia.500/25%)] h-full">
+          <div className="relative overflow-hidden flex flex-col min-[1800px]:flex-row xl:gap-20 p-10 min-[1800px]:justify-between min-[1800px]:items-center rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.teal.200/30%),inset_-8px_0_12px_-10px_theme(colors.fuchsia.500/25%)] h-full">
             <div className="-bottom-60 -right-70 bg-radial from-purple-500/80 to-fuchsia-500/50 absolute rounded-full w-120 h-140 pointer-events-none select-none blur-3xl opacity-40"></div>
 
             {/* content */}
@@ -336,7 +336,7 @@ function Portfolio() {
               </p>
               <a
                 href="mailto:skrollanelenazimmermann@gmail.com"
-                className="mt-50 mb-5 bg-linear-150 from-teal-500/50 via-cyan-500/20 to-slate-950 border border-teal-400  rounded-2xl p-4 flex items-center text-sm gap-2 font-semibold cursor-pointer shadow-[0_0_1px_rgba(34,211,238,0.6),inset_0_0_5px_rgba(34,211,238,0.25)] hover:shadow-[0_0_5px_rgba(34,211,238,0.8),inset_0_0_6px_rgba(34,211,238,0.4)] hover:border-cyan-300 transition-all duration-300">
+                className=" mt-15 xl:mt-50 mb-5 bg-linear-150 from-teal-500/40 via-cyan-500/20 to-slate-950 border border-teal-400  rounded-2xl p-4 flex items-center text-sm gap-2 font-semibold cursor-pointer shadow-[0_0_1px_rgba(34,211,238,0.6),inset_0_0_5px_rgba(34,211,238,0.25)] hover:shadow-[0_0_5px_rgba(34,211,238,0.8),inset_0_0_6px_rgba(34,211,238,0.4)] hover:border-cyan-300 transition-all duration-300">
                 <GitHubIcon className="fill-white" size="h-6 w-6 lg:h-7 lg:w-7" />
                 <span className="font-medium text-slate-50">GitHub ansehen</span>
                 <span className="ml-auto">{arrowIcon}</span>
@@ -346,7 +346,7 @@ function Portfolio() {
             <img
               src="./githubDesigns.svg"
               alt=""
-              className="w-80 h-auto right-25 top-35 xl:absolute hidden lg:block"
+              className="w-80 h-auto right-25 top-35 min-[1800px]:absolute hidden lg:block"
             />
 
             {/* content */}
