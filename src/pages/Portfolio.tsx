@@ -199,12 +199,12 @@ function Portfolio() {
 
       <section ref={sectionRef} className="relative flex flex-col mt-40 p-5 lg:p-20 " id="projekte">
         <div className=" backdrop-blur-lg rounded-3xl ">
-          <div className="xl:text-center mb-20 lg:mb-8">
+          <div className="mb-20 lg:mb-8 text-center">
             <span className="text-teal-300 tracking-widest">• Projekte •</span>
-            <h2 className="text-slate-50 text-2xl font-semibold lg:text-5xl mt-2">
+            <h2 className="text-slate-50 text-3xl font-semibold lg:text-5xl mt-2">
               Meine Projekte
             </h2>
-            <p className="text-slate-400 text-base lg:mt-10 lg:text-xl">
+            <p className="text-slate-400 text-xl lg:mt-10 lg:text-xl mt-2.5">
               Eine Auswahl meiner Projekte – entwickelt mit Fokus auf sauberen Code, moderne
               Webtechnologien und praxisnahe Softwareentwicklung.
             </p>
