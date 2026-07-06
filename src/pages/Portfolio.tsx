@@ -8,7 +8,7 @@ import {
   instagramPath,
   ArrowDownIcon,
   FolderIcon,
-  LinkIcon,
+  WorldIcon,
 } from "../components/icons/paths";
 import Cube from "../components/cube/Cube";
 
@@ -27,7 +27,7 @@ function Portfolio() {
 
   return (
     <div className="font-sans">
-      <section className="flex xl:h-screen flex-col p-5 lg:p-20 ">
+      <section className="flex  flex-col p-5 lg:p-5 ">
         <div className="p-[1px] rounded-2xl bg-linear-to-r from-teal-200/60 to-indigo-300/60">
           <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)]">
             <img
@@ -114,7 +114,7 @@ function Portfolio() {
               </div>
 
               {/* beschreibung */}
-              <div className="border-t border-b p-7 mt-10 lg:p-14 border-slate-700 ">
+              <div className="border-t border-b p-7 mt-10  border-slate-700 ">
                 <p className="text-sm text-slate-400 w-full lg:text-xl ">
                   Ich bin eine Softwareentwicklerin mit Schwerpunkt auf den Bereich
                   Frontend-Web-Development. Ich liebe Es neue Dinge zu gestalten und Ideen in echte
@@ -129,7 +129,7 @@ function Portfolio() {
                   <Icons href="https://github.com/Skrollan" path={githubPath} />
                   <Icons href="https://www.instagram.com/skrollan" path={instagramPath} />
                 </div>
-                <div className="xl:flex xl:gap-10">
+                <div className="xl:flex xl:gap-10 justify-items-center-safe">
                   <Button
                     label="Projekte ansehen"
                     targetId="projekte"
@@ -155,24 +155,27 @@ function Portfolio() {
       </section>
 
       <section className="flex flex-col mt-40 p-5 lg:p-20 " id="projekte">
-        <div className=" backdrop-blur-lg rounded-2xl ">
-          <div className="text-center mb-20 lg:mb-8">
-            <h2 className="text-slate-50 text-2xl font-semibold lg:text-5xl">Meine Projekte</h2>
+        <div className=" backdrop-blur-lg rounded-3xl overflow-hidden">
+          <div className="xl:text-center mb-20 lg:mb-8">
+            <span className="text-teal-300 tracking-widest">• Projekte •</span>
+            <h2 className="text-slate-50 text-2xl font-semibold lg:text-5xl mt-2">
+              Meine Projekte
+            </h2>
             <p className="text-slate-400 text-base lg:mt-10 lg:text-xl">
-              Hier sind einige Auszüge aus meiner Arbeit, sodass Sie sich ein Bild meiner
-              Fähigkeiten und Erfahrungen machen können.
+              Eine Auswahl meiner Projekte – entwickelt mit Fokus auf sauberen Code, moderne
+              Webtechnologien und praxisnahe Softwareentwicklung.
             </p>
           </div>
-          <div className="flex flex-col text-slate-50 gap-20 lg:flex-row lg:gap-10 lg:m-20">
+          <div className="flex flex-col items-center text-slate-50 gap-20 xl:flex-row xl:items-stretch lg:gap-10 lg:m-20">
             <ProjekteCard
               image="/Portfolio/wetterApp.png"
               title="Mobile Wetter WebApp"
               imageAlt="WetterApp Preview Bild"
               link="https://schokett.github.io/WetterApp/"
               linkLabel="schokett.github.io/WetterApp/"
-              svgIcon={LinkIcon}
+              svgIcon={WorldIcon}
               description={WeatherDescription}
-              technologies={["HTML", "JavaScript", "Vite", "SCSS", "BEM", "WeatherAPI"]}
+              technologies={["JavaScript", "Vite", "SCSS", "BEM", "WeatherAPI"]}
               linkBtn="https://github.com/Schokett/WetterApp"
             />
             <ProjekteCard
@@ -181,9 +184,9 @@ function Portfolio() {
               imageAlt="WitzeApp Preview Bild"
               link="https://schokett.github.io/witzeApp/"
               linkLabel="schokett.github.io/witzeApp/"
-              svgIcon={LinkIcon}
+              svgIcon={WorldIcon}
               description={JokeDescription}
-              technologies={["HTML", "JavaScript", "Vite", "SCSS", "BEM", "AJAX"]}
+              technologies={["JavaScript", "Vite", "SCSS", "BEM", "AJAX"]}
               linkBtn="https://github.com/Schokett/witzeApp"
             />
             <ProjekteCard
@@ -192,17 +195,9 @@ function Portfolio() {
               imageAlt="Nutzerverwaltung WebApp Preview Bild"
               link="https://schokett.github.io/UserApplication/"
               linkLabel="schokett.github.io/UserApplication/"
-              svgIcon={LinkIcon}
+              svgIcon={WorldIcon}
               description={UserAppDescription}
-              technologies={[
-                "HTML",
-                "TypeScript",
-                "Vite",
-                "SCSS",
-                "BEM",
-                "React",
-                "Responsive Design",
-              ]}
+              technologies={["TypeScript", "Vite", "SCSS", "BEM", "React", "Responsive Design"]}
               linkBtn="https://github.com/Schokett/UserApplication"
             />
           </div>
