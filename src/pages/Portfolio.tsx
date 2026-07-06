@@ -331,6 +331,7 @@ function Portfolio() {
             <div className="flex flex-col">
               <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">{ChatIcon}</div>
               <span className="text-teal-300 tracking-widest uppercase text-sm">Kontakt</span>
+              <h2 className="text-white text-4xl font-bold">Noch Frage?</h2>
             </div>
             {/* content */}
           </div>
@@ -344,6 +345,7 @@ function Portfolio() {
             <div className="flex flex-col">
               <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">{GitHubIcon}</div>
               <span className="text-teal-300 tracking-widest uppercase text-sm">Entdecke Mehr</span>
+              <h2 className="text-white text-4xl font-bold">Weitere Erfahrungen</h2>
             </div>
             {/* content */}
           </div>
