@@ -11,10 +11,10 @@ import {
   ArrowDownIcon,
   FolderIcon,
   WorldIcon,
-  GitHubIcon,
   ChatIcon,
   arrowIcon,
 } from "../components/icons/paths";
+import { GitHubIcon } from "../components/icons/GitHubIcon";
 import Cube from "../components/cube/Cube";
 
 function Portfolio() {
@@ -329,34 +329,48 @@ function Portfolio() {
             <div className="top-10 -left-65 bg-radial from-cyan-500/80 to-cyan-400/70 absolute rounded-full w-90 h-100 pointer-events-none select-none blur-3xl opacity-40"></div>
 
             {/* content */}
-            <div className="relative z-10 flex flex-col">
-              <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">{ChatIcon}</div>
-              <span className="text-cyan-300 tracking-widest uppercase text-sm mb-2">Kontakt</span>
-              <h2 className="text-white text-4xl font-bold mb-5">Noch Frage?</h2>
-              <div className="bg-cyan-300 w-10 h-1 rounded-full mb-5"></div>
-              <p className="text-slate-400 w-90">
-                Zögern Sie nicht mich zu kontaktieren. Nutzen Sie dafür gerne die unten aufgeführte
-                E-Mail Adresse oder schauen Sie auf meinen Social-Media-Profilen vorbei!
-              </p>
-              <a
-                href="mailto:skrollanelenazimmermann@gmail.com"
-                className="text-cyan-300 border rounded-xl border-cyan-700 p-2 flex items-center gap-3 mt-5 lg:text-base justify-center shadow-[0_0_10px_rgba(34,211,238,0.5)]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  className="size-5">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                  />
-                </svg>
-                skrollanelenazimmermann@gmail.com
-                {arrowIcon}
-              </a>
+            <div className="relative z-10 flex flex-col ">
+              <div className="border-b-slate-800 border-b mb-5">
+                <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">{ChatIcon}</div>
+                <span className="text-cyan-300 tracking-widest uppercase text-sm mb-2">
+                  Kontakt
+                </span>
+                <h2 className="text-white text-4xl font-bold mb-5">Noch Frage?</h2>
+                <div className="bg-cyan-300 w-10 h-1 rounded-full mb-5"></div>
+                <p className="text-slate-400 w-90">
+                  Zögern Sie nicht mich zu kontaktieren. Nutzen Sie dafür gerne die unten
+                  aufgeführte E-Mail Adresse oder schauen Sie auf meinen Social-Media-Profilen
+                  vorbei!
+                </p>
+                <a
+                  href="mailto:skrollanelenazimmermann@gmail.com"
+                  className="text-cyan-300  mb-8 border rounded-xl border-cyan-700 p-3 flex items-center gap-3 mt-10 lg:text-base justify-center shadow-[0_0_10px_rgba(34,211,238,0.5)]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    className="size-5">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                    />
+                  </svg>
+                  skrollanelenazimmermann@gmail.com
+                  {arrowIcon}
+                </a>
+              </div>
+              <span className="text-slate-400 font-medium tracking-widest uppercase text-sm mb-2">
+                Folge mir
+              </span>
+
+              <div className="flex gap-4 mt-5 justify-start lg:mt-2">
+                <Icons href="https://www.linkedin.com/in/skrollan" path={linkedinPath} />
+                <Icons href="https://github.com/Skrollan" path={githubPath} />
+                <Icons href="https://www.instagram.com/skrollan" path={instagramPath} />
+              </div>
             </div>
             {/* content */}
           </div>
@@ -365,10 +379,16 @@ function Portfolio() {
         <div className="w-3/5 p-[1px] rounded-2xl bg-linear-to-r from-teal-200/60 to-violet-500/80">
           <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)] h-full">
             <div className="-bottom-60 -right-60 bg-radial from-violet-500/80 to-indigo-400/70 absolute rounded-full w-120 h-140 pointer-events-none select-none blur-3xl opacity-40"></div>
-
+            <img
+              src="./githubDesigns.svg"
+              alt=""
+              className="absolute w-80 h-auto right-85 top-32"
+            />
             {/* content */}
             <div className="relative z-10 flex flex-col">
-              <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">{GitHubIcon}</div>
+              <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">
+                <GitHubIcon />
+              </div>
               <span className="text-cyan-300 tracking-widest uppercase text-sm mb-2">
                 Entdecke Mehr
               </span>
@@ -378,7 +398,15 @@ function Portfolio() {
                 Auf meinem GitHub-Profil finden Sie weitere Projekte, die ich im Laufe der Zeit
                 erstellt habe. Dort können Sie sich auch selbst von meinem Code überzeugen.
               </p>
+              <a
+                href="mailto:skrollanelenazimmermann@gmail.com"
+                className="mt-50 mb-5 bg-linear-150 from-teal-500/50 via-cyan-500/20 to-slate-950 border border-teal-400  rounded-2xl p-4 flex items-center text-sm gap-2 font-semibold cursor-pointer shadow-[0_0_1px_rgba(34,211,238,0.6),inset_0_0_5px_rgba(34,211,238,0.25)] hover:shadow-[0_0_5px_rgba(34,211,238,0.8),inset_0_0_6px_rgba(34,211,238,0.4)] hover:border-cyan-300 transition-all duration-300">
+                <GitHubIcon className="fill-white" size="h-6 w-6 lg:h-7 lg:w-7" />
+                <span className="font-medium text-slate-50">GitHub ansehen</span>
+                <span className="ml-auto">{arrowIcon}</span>
+              </a>
             </div>
+
             {/* content */}
           </div>
         </div>
