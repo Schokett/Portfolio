@@ -1,6 +1,8 @@
 import Button from "../components/button/Button";
 import Footer from "../components/footer/Footer";
 import Icons from "../components/icons/Icons";
+import { useEffect, useRef } from "react";
+
 import ProjekteCard from "../components/projectCard/ProjectCard";
 import {
   linkedinPath,
@@ -13,6 +15,47 @@ import {
 import Cube from "../components/cube/Cube";
 
 function Portfolio() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const lightTopRef = useRef<HTMLDivElement>(null);
+  const lightBottomRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let frameId: number;
+
+    const update = () => {
+      if (!sectionRef.current) return;
+
+      const rect = sectionRef.current.getBoundingClientRect();
+      const vh = window.innerHeight;
+
+      const totalScrollable = Math.max(rect.height - vh, 1);
+      const overall = Math.min(Math.max(-rect.top / totalScrollable, 0), 1);
+      const topProgress = Math.min(overall / 0.6, 1);
+      const bottomProgress = Math.min(Math.max((overall - 0.4) / 0.6, 0), 1);
+
+      const distance = (rect.height - 384) * 0.7;
+
+      if (lightTopRef.current) {
+        lightTopRef.current.style.transform = `translateY(${topProgress * distance}px)`;
+      }
+      if (lightBottomRef.current) {
+        lightBottomRef.current.style.transform = `translateY(${-bottomProgress * distance}px)`;
+      }
+    };
+
+    const onScroll = () => {
+      cancelAnimationFrame(frameId);
+      frameId = requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(frameId);
+    };
+  }, []);
+
   const WeatherDescription = `Meine mobile Wetter App zeigt aktuelle Wetterdaten für Städte auf der ganzen Welt an.
             Die App wurde "mobile-first" entwickelt und für Mobilgeräte aller Art optimiert. Der
             Nutzer hat die Möglichkeit, Orte in einer Favoritenliste zu speichern und diese Liste zu
@@ -27,7 +70,7 @@ function Portfolio() {
 
   return (
     <div className="font-sans">
-      <section className="flex  flex-col p-5 lg:p-5 ">
+      <section className="flex flex-col p-5 lg:p-5 ">
         <div className="p-[1px] rounded-2xl bg-linear-to-r from-teal-200/60 to-indigo-300/60">
           <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)]">
             <img
@@ -154,8 +197,8 @@ function Portfolio() {
         </div>
       </section>
 
-      <section className="flex flex-col mt-40 p-5 lg:p-20 " id="projekte">
-        <div className=" backdrop-blur-lg rounded-3xl overflow-hidden">
+      <section ref={sectionRef} className="relative flex flex-col mt-40 p-5 lg:p-20 " id="projekte">
+        <div className=" backdrop-blur-lg rounded-3xl ">
           <div className="xl:text-center mb-20 lg:mb-8">
             <span className="text-teal-300 tracking-widest">• Projekte •</span>
             <h2 className="text-slate-50 text-2xl font-semibold lg:text-5xl mt-2">
@@ -166,7 +209,14 @@ function Portfolio() {
               Webtechnologien und praxisnahe Softwareentwicklung.
             </p>
           </div>
+
           <div className="flex flex-col items-center text-slate-50 gap-20 xl:flex-row xl:items-stretch lg:gap-10 lg:m-20">
+            <div
+              ref={lightTopRef}
+              className="top-0 -left-50 bg-radial from-fuchsia-500/50 via-violet-400/30 absolute rounded-full w-96 h-96 pointer-events-none select-none blur-3xl opacity-40"></div>
+            <div
+              ref={lightBottomRef}
+              className="bottom-0 -right-50 bg-radial from-fuchsia-500/50 via-violet-400/30 absolute rounded-full w-96 h-96 pointer-events-none select-none blur-3xl opacity-40"></div>
             <ProjekteCard
               image="/Portfolio/wetterApp.png"
               title="Mobile Wetter WebApp"
@@ -177,6 +227,7 @@ function Portfolio() {
               description={WeatherDescription}
               technologies={["JavaScript", "Vite", "SCSS", "BEM", "WeatherAPI"]}
               linkBtn="https://github.com/Schokett/WetterApp"
+              feature="Mobile View"
             />
             <ProjekteCard
               image="/Portfolio/witzeApp.png"

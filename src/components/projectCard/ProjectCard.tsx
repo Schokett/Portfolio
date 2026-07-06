@@ -10,6 +10,7 @@ interface ProjectCardProps {
   description: string;
   technologies: string[];
   linkBtn: string;
+  feature?: string;
 }
 
 function ProjekteCard({
@@ -17,11 +18,11 @@ function ProjekteCard({
   imageAlt,
   title,
   link,
-  linkLabel,
   svgIcon,
   description,
   technologies,
   linkBtn,
+  feature,
 }: ProjectCardProps) {
   const ArrowToRightIcon = (
     <svg
@@ -39,13 +40,36 @@ function ProjekteCard({
     </svg>
   );
   return (
-    <div className="w-full max-w-xl xl:max-w-none xl:flex-1 xl:min-w-0 p-[1px] rounded-2xl bg-linear-to-r from-teal-900/50 to-indigo-800/50">
-      <div className="h-full flex flex-col gap-3 rounded-2xl p-4  bg-slate-950 inset-shadow-[0_0_4px_theme(colors.teal.200)] pt-10">
+    <div
+      className="w-full max-w-xl xl:max-w-none xl:flex-1 xl:min-w-0 p-[2px] rounded-2xl"
+      style={{
+        background:
+          "radial-gradient(ellipse 500px 400px at -5% -10%, rgba(170,210,255,0.7), rgba(99,102,241,0.25) 40%, rgba(51,65,85,0.4) 75%)",
+      }}>
+      <div className="relative overflow-hidden h-full flex flex-col gap-3 rounded-2xl p-4 bg-slate-950 shadow-[0_0_18px_rgba(34,211,238,0.18)]">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 600px 500px at -10% -20%, rgba(148,196,255,0.22), rgba(148,163,255,0.08) 40%, transparent 65%)",
+          }}
+        />
+
         <img
           src={image}
           alt={imageAlt ?? title}
           className="rounded-xl border border-slate-700/50 w-full max-w-md h-64 object-cover object-top"
         />
+        {feature && (
+          <div
+            className="inline-flex items-center rounded-full w-fit px-3 py-1 text-[9px] font-bold uppercase tracking-[0.15em] text-cyan-200 border border-cyan-300/30 bg-gradient-to-r from-cyan-400/15 via-cyan-400/12 to-blue-400/15 backdrop-blur-md shadow-[0_0_10px_rgba(16,185,129,.25),0_0_30px_rgba(34,211,238,.12)] transition-all duration-300"
+            style={{
+              textShadow: "0 0 8px rgba(45,212,191,.6)",
+            }}>
+            {feature}
+          </div>
+        )}
         <h2 className="font-extrabold text-3xl">{title}</h2>
         <a
           href={link}
