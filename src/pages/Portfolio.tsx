@@ -2,6 +2,7 @@ import Button from "../components/button/Button";
 import Footer from "../components/footer/Footer";
 import Icons from "../components/icons/Icons";
 import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 import ProjekteCard from "../components/projectCard/ProjectCard";
 import {
@@ -23,6 +24,12 @@ function Portfolio() {
   const sectionRef = useRef<HTMLElement>(null);
   const lightTopRef = useRef<HTMLDivElement>(null);
   const lightBottomRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) return;
+    document.getElementById(location.hash.slice(1))?.scrollIntoView({ behavior: "smooth" });
+  }, [location.hash]);
 
   useEffect(() => {
     let frameId: number;
@@ -75,7 +82,7 @@ function Portfolio() {
 
   return (
     <div className="font-sans">
-      <section className="flex flex-col p-5 lg:p-5 ">
+      <section className="flex flex-col p-5 lg:p-5" id="hero">
         <div className="p-[1px] rounded-2xl bg-linear-to-r from-teal-200/60 to-indigo-300/60">
           <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 lg:flex-row lg:justify-between lg:items-center rounded-2xl bg-slate-950 inset-shadow-[0_0_5px_theme(colors.teal.200)]">
             <img
