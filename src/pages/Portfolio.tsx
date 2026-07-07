@@ -8,11 +8,13 @@ import {
   linkedinPath,
   githubPath,
   instagramPath,
-  ArrowDownIcon,
-  FolderIcon,
-  WorldIcon,
-  ChatIcon,
+  arrowDownIcon,
+  folderIcon,
+  worldIcon,
+  chatIcon,
   arrowIcon,
+  arrowRight,
+  rocketIcon,
 } from "../components/icons/paths";
 import { GitHubIcon } from "../components/icons/GitHubIcon";
 import Cube from "../components/cube/Cube";
@@ -179,8 +181,8 @@ function Portfolio() {
                   <Button
                     label="Projekte ansehen"
                     targetId="projekte"
-                    icon={ArrowDownIcon}
-                    secendIcon={FolderIcon}
+                    icon={arrowDownIcon}
+                    secendIcon={folderIcon}
                     className="mt-10 lg:mt-10"
                   />
                   <Button
@@ -226,7 +228,7 @@ function Portfolio() {
               imageAlt="WetterApp Preview Bild"
               link="https://schokett.github.io/WetterApp/"
               linkLabel="schokett.github.io/WetterApp/"
-              svgIcon={WorldIcon}
+              svgIcon={worldIcon}
               description={WeatherDescription}
               technologies={["JavaScript", "Vite", "SCSS", "BEM", "WeatherAPI"]}
               linkBtn="https://github.com/Schokett/WetterApp"
@@ -238,7 +240,7 @@ function Portfolio() {
               imageAlt="WitzeApp Preview Bild"
               link="https://schokett.github.io/witzeApp/"
               linkLabel="schokett.github.io/witzeApp/"
-              svgIcon={WorldIcon}
+              svgIcon={worldIcon}
               description={JokeDescription}
               technologies={["JavaScript", "Vite", "SCSS", "BEM", "AJAX"]}
               linkBtn="https://github.com/Schokett/witzeApp"
@@ -249,7 +251,7 @@ function Portfolio() {
               imageAlt="Nutzerverwaltung WebApp Preview Bild"
               link="https://schokett.github.io/UserApplication/"
               linkLabel="schokett.github.io/UserApplication/"
-              svgIcon={WorldIcon}
+              svgIcon={worldIcon}
               description={UserAppDescription}
               technologies={["TypeScript", "Vite", "SCSS", "BEM", "React", "Responsive Design"]}
               linkBtn="https://github.com/Schokett/UserApplication"
@@ -258,9 +260,9 @@ function Portfolio() {
         </div>
       </section>
 
-      <section className="flex flex-col xl:flex-row gap-5 p-5 lg:p-5 m-5 xl:m-20 justify-center mt-50">
+      <section className="flex flex-col xl:flex-row gap-5 p-5 lg:p-5 m-5 xl:m-20 xl:mb-5 justify-center mt-50">
         <div className=" w-full xl:w-8/20 p-[2px] rounded-2xl bg-linear-135 from-cyan-500/80 from-10% to-slate-500/40 to-50%">
-          <div className="relative overflow-hidden flex flex-col xl:gap-20 p-10 rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.cyan.500/40%),inset_-8px_0_12px_-10px_theme(colors.indigo.300/30%)] h-full">
+          <div className=" backdrop-blur-lg relative overflow-hidden flex flex-col xl:gap-20 p-10 rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.cyan.500/40%),inset_-8px_0_12px_-10px_theme(colors.indigo.300/30%)] h-full">
             <img
               src="grid.svg"
               alt="grid-background"
@@ -271,7 +273,7 @@ function Portfolio() {
             {/* content */}
             <div className="relative z-10 flex flex-col ">
               <div className="border-b-slate-800 border-b mb-5">
-                <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">{ChatIcon}</div>
+                <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">{chatIcon}</div>
                 <span className="text-cyan-300 tracking-widest uppercase text-sm mb-2">
                   Kontakt
                 </span>
@@ -298,7 +300,9 @@ function Portfolio() {
                       d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                     />
                   </svg>
-                  <span className="break-all">skrollanelenazimmermann@gmail.com</span>
+                  <span className="break-all text-shadow-xs text-shadow-cyan-500/50">
+                    skrollanelenazimmermann@gmail.com
+                  </span>
                   {arrowIcon}
                 </a>
               </div>
@@ -318,7 +322,7 @@ function Portfolio() {
 
         <div className="w-full xl:w-9/20 p-[2px] rounded-2xl bg-linear-135 from-slate-500/40 from-50% to-purple-400/30 to-70%">
           <div className="relative overflow-hidden flex flex-col min-[1800px]:flex-row xl:gap-20 p-10 min-[1800px]:justify-between min-[1800px]:items-center rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.teal.200/30%),inset_-8px_0_12px_-10px_theme(colors.fuchsia.500/25%)] h-full">
-            <div className="-bottom-60 -right-70 bg-radial from-purple-500/80 to-fuchsia-500/50 absolute rounded-full w-120 h-140 pointer-events-none select-none blur-3xl opacity-40"></div>
+            <div className="backdrop-blur-lg -bottom-60 -right-70 bg-radial from-purple-500/80 to-fuchsia-500/50 absolute rounded-full w-120 h-140 pointer-events-none select-none blur-3xl opacity-40"></div>
 
             {/* content */}
             <div className="relative z-10 flex flex-col">
@@ -342,7 +346,7 @@ function Portfolio() {
                 <span className="ml-auto">{arrowIcon}</span>
               </a>
             </div>
-            <div className="bottom-40 right-50 bg-radial hidden lg:block from-teal-500/80 to-teal-400/70 absolute rounded-full w-30 h-30 pointer-events-none select-none blur-3xl opacity-40"></div>
+            <div className="bottom-40 right-50  hidden lg:block bg-radial from-teal-500/80 to-teal-400/70 absolute rounded-full w-30 h-30 pointer-events-none select-none blur-3xl opacity-40"></div>
             <img
               src="./githubDesigns.svg"
               alt=""
@@ -353,6 +357,18 @@ function Portfolio() {
           </div>
         </div>
       </section>
+
+      <div className=" border-slate-800 border rounded-full w-fit p-5 backdrop-blur-lg m-auto flex flex-row gap-3 items-center">
+        <div className=" bg-slate-800 p-2 rounded-full">{rocketIcon}</div>
+        <span className="text-slate-300 mr-1">
+          Lust auf Zusammenarbeit? Ich freue mich auf Ihre Nachricht!
+        </span>
+        <a
+          href="mailto:skrollanelenazimmermann@gmail.com"
+          className="text-cyan-300 text-shadow-xs text-shadow-cyan-500/50 lg:text-base flex gap-3 items-center">
+          Kontakt aufnehmen {arrowRight}
+        </a>
+      </div>
 
       <Footer />
     </div>
