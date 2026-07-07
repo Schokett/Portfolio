@@ -188,7 +188,7 @@ function Portfolio() {
                   <Button
                     label="Kontakt"
                     targetId="contact"
-                    className="mt-10 lg:mt-10 bg-slate-950 shadow-amber-950"
+                    className="mt-10 lg:mt-10 bg-none shadow-amber-950"
                   />
                 </div>
               </div>
@@ -260,7 +260,9 @@ function Portfolio() {
         </div>
       </section>
 
-      <section className="flex flex-col xl:flex-row gap-5 p-5 lg:p-5 m-5 xl:m-20 xl:mb-5 justify-center mt-50">
+      <section
+        className="flex flex-col xl:flex-row gap-5 p-5 lg:p-5 m-5 xl:m-20 xl:mb-5 justify-center mt-50"
+        id="contact">
         <div className=" w-full xl:w-8/20 p-[2px] rounded-2xl bg-linear-135 from-cyan-500/80 from-10% to-slate-500/40 to-50%">
           <div className=" backdrop-blur-lg relative overflow-hidden flex flex-col xl:gap-20 p-10 rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.cyan.500/40%),inset_-8px_0_12px_-10px_theme(colors.indigo.300/30%)] h-full">
             <img
@@ -300,7 +302,7 @@ function Portfolio() {
                       d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                     />
                   </svg>
-                  <span className="break-all text-shadow-xs text-shadow-cyan-500/50">
+                  <span className="break-all text-shadow-xs text-shadow-cyan-500/50 hover:text-cyan-200">
                     skrollanelenazimmermann@gmail.com
                   </span>
                   {arrowIcon}
@@ -339,8 +341,8 @@ function Portfolio() {
                 erstellt habe. Dort können Sie sich auch selbst von meinem Code überzeugen.
               </p>
               <a
-                href="mailto:skrollanelenazimmermann@gmail.com"
-                className=" mt-15 xl:mt-50 mb-5 bg-linear-150 from-teal-500/40 via-cyan-500/20 to-slate-950 border border-teal-400  rounded-2xl p-4 flex items-center text-sm gap-2 font-semibold cursor-pointer shadow-[0_0_1px_rgba(34,211,238,0.6),inset_0_0_5px_rgba(34,211,238,0.25)] hover:shadow-[0_0_5px_rgba(34,211,238,0.8),inset_0_0_6px_rgba(34,211,238,0.4)] hover:border-cyan-300 transition-all duration-300">
+                href="https://github.com/Schokett"
+                className=" mt-15 xl:mt-50 mb-5 bg-linear-150 from-cyan-500/40 via-teal-500/20 to-slate-950 border border-cyan-400  rounded-2xl p-4 flex items-center text-sm gap-2 font-semibold cursor-pointer shadow-[0_0_1px_rgba(34,211,238,0.6),inset_0_0_5px_rgba(34,211,238,0.25)] hover:shadow-[0_0_5px_rgba(34,211,238,0.8),inset_0_0_6px_rgba(34,211,238,0.4)] hover:border-cyan-300 transition-all duration-300">
                 <GitHubIcon className="fill-white" size="h-6 w-6 lg:h-7 lg:w-7" />
                 <span className="font-medium text-slate-50">GitHub ansehen</span>
                 <span className="ml-auto">{arrowIcon}</span>
@@ -365,7 +367,7 @@ function Portfolio() {
         </span>
         <a
           href="mailto:skrollanelenazimmermann@gmail.com"
-          className="text-cyan-300 text-shadow-xs text-shadow-cyan-500/50 lg:text-base flex gap-3 items-center">
+          className="text-cyan-300 text-shadow-xs text-shadow-cyan-500/50 lg:text-base flex gap-3 items-center hover:text-cyan-200 transition-all duration-300">
           Kontakt aufnehmen {arrowRight}
         </a>
       </div>

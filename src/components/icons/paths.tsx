@@ -15,7 +15,7 @@ export const arrowDownIcon = (
     viewBox="0 0 24 24"
     stroke-width="2"
     stroke="currentColor"
-    className="size-6 text-slate-300">
+    className="size-6 text-teal-400">
     <path
       stroke-linecap="round"
       stroke-linejoin="round"
