@@ -1,73 +1,50 @@
-# React + TypeScript + Vite
+# Portfolio – Skrollan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mein persönliches Portfolio als Frontend-Entwicklerin mit Fokus auf modernes UI-Design, Animationen und sauberes, wartbares CSS.
 
-Currently, two official plugins are available:
+**🔗 Live ansehen:** [schokett.github.io/Portfolio](https://schokett.github.io/Portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Screenshot der Startseite](./public/screenshot.png)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Neon/Nebula-Design** – dunkles Slate-Theme mit Teal-, Cyan-, Violett- und Fuchsia-Akzenten, Gradient-Borders und Glow-Effekten
+- **3D-CSS-Cube-Animation** – umgesetzt mit `requestAnimationFrame` und `useRef`, ohne externe Animations-Library
+- **Scroll-Effekte** – Parallax- und Rotationseffekte beim Scrollen
+- **Vollständig responsiv** – optimiert für Mobile, Tablet und Desktop
+- **Wiederverwendbare Komponenten** – u. a. prop-gesteuerte Buttons, Projekt-Cards und Social-Icons mit dynamischen SVG-Gradienten (`useId()`)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech-Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Bereich    | Technologie                                    |
+| ---------- | ---------------------------------------------- |
+| Framework  | React 19                                       |
+| Sprache    | TypeScript                                     |
+| Styling    | Tailwind CSS v4                                |
+| Routing    | React Router (mit `basename` für GitHub Pages) |
+| Build-Tool | Vite                                           |
+| Deployment | GitHub Actions → GitHub Pages                  |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Lokal starten
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/Schokett/Portfolio.git
+cd Portfolio
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Der Dev-Server läuft anschließend unter `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Build & Deployment
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Das Projekt wird bei jedem Push auf `main` automatisch über GitHub Actions gebaut und auf GitHub Pages deployt.
+
+```bash
+npm run build   # Produktions-Build in /dist
 ```
+
+## 📬 Kontakt
+
+- GitHub: [@Schokett](https://github.com/Schokett)
+- Instagram: [@hyodo.websitedesigns](https://instagram.com/hyodo.websitedesigns)
