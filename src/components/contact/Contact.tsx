@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div className="">
       <section
-        className="flex flex-col xl:flex-row gap-5 p-5 lg:p-5 m-5 xl:m-20 xl:mb-5 justify-center mt-50"
+        className="flex flex-col xl:flex-row gap-5 p-5 lg:p-5 m-5 xl:m-20 xl:mb-5 justify-center mt-20 xl:mt-50"
         id="contact">
         <div className=" w-full xl:w-8/20 p-[2px] rounded-2xl bg-linear-135 from-cyan-500/80 from-10% to-slate-500/40 to-50%">
           <div className=" backdrop-blur-lg relative overflow-hidden flex flex-col xl:gap-20 p-10 rounded-2xl bg-slate-950 shadow-[inset_8px_0_12px_-10px_theme(colors.cyan.500/40%),inset_-8px_0_12px_-10px_theme(colors.indigo.300/30%)] h-full">
@@ -106,17 +106,19 @@ function Contact() {
         </div>
       </section>
 
-      <div className=" border-slate-800 border rounded-full w-fit p-5 backdrop-blur-lg m-auto flex flex-col xl:flex-row gap-3 items-center">
-        <div className=" bg-slate-800 p-2 rounded-full">{rocketIcon}</div>
-        <span className="text-slate-300 mr-1 text-center">
-          Lust auf Zusammenarbeit? Ich freue mich auf Ihre Nachricht!
-        </span>
-        <a
-          href="mailto:skrollanelenazimmermann@gmail.com"
-          className="text-cyan-300 text-shadow-xs text-shadow-cyan-500/50 lg:text-base flex gap-3 items-center hover:text-cyan-200 transition-all duration-300">
-          Kontakt aufnehmen {arrowRight}
-        </a>
-      </div>
+      <section className="grid place-items-center">
+        <div className=" border-slate-800 border rounded-full w-fit p-5 backdrop-blur-lg my-auto mx-5 flex flex-col xl:flex-row gap-3 items-center ">
+          <div className=" bg-slate-800 p-2 rounded-full">{rocketIcon}</div>
+          <span className="text-slate-300 mr-1 text-center">
+            Lust auf Zusammenarbeit? Ich freue mich auf Ihre Nachricht!
+          </span>
+          <a
+            href="mailto:skrollanelenazimmermann@gmail.com"
+            className="text-cyan-300 text-shadow-xs text-shadow-cyan-500/50 lg:text-base flex gap-3 items-center hover:text-cyan-200 transition-all duration-300">
+            Kontakt aufnehmen {arrowRight}
+          </a>
+        </div>
+      </section>
     </div>
   );
 }
