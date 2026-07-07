@@ -56,8 +56,8 @@ function Footer() {
       <div className="flex justify-between mb-5 items-center mt-5 lg:mt-5">
         <div className="flex gap-4 justify-start h-fit lg:mt-2 ">
           <Icons href="https://www.linkedin.com/in/skrollan" path={linkedinPath} />
-          <Icons href="https://github.com/Skrollan" path={githubPath} />
-          <Icons href="https://www.instagram.com/skrollan" path={instagramPath} />
+          <Icons href="https://github.com/Schokett" path={githubPath} />
+          <Icons href="https://www.instagram.com/hyodo.websitedesigns" path={instagramPath} />
         </div>
         <Button secendIcon={arrowUp} label="Nach oben" targetId="hero" glow={false} className="" />
       </div>
