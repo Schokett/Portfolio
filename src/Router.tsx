@@ -17,8 +17,8 @@ const router = createBrowserRouter(
   { basename: "/Portfolio/" },
 );
 
-function Rooter() {
+function Router() {
   return <RouterProvider router={router} />;
 }
 
-export default Rooter;
+export default Router;

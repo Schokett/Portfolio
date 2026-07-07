@@ -5,7 +5,6 @@ interface ProjectCardProps {
   imageAlt?: string;
   title: string;
   link: string;
-  linkLabel: string;
   svgIcon: React.ReactNode;
   description: string;
   technologies: string[];
