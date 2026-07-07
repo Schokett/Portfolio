@@ -18,7 +18,7 @@ function Footer() {
   };
 
   return (
-    <footer className="border-t-2 border-transparent [border-image:linear-gradient(to_right,#2dd4bf,#22d3ee,#8b5cf6,#d946ef)_1] bg-slate-900 text-slate-400 py-6 mt-30 lg:mt-50 p-5">
+    <footer className="border-t-2 border-transparent [border-image:linear-gradient(to_right,#2dd4bf,#22d3ee,#8b5cf6,#d946ef)_1] bg-slate-900 text-slate-400 py-6 mt-30 lg:mt-50 p-5 lg:p-15">
       <div className="">
         <p className="text-slate-100 font-bold">Skrollan Hyodo</p>
         <p className="text-cyan-400 font-medium">Frontend Developer</p>
