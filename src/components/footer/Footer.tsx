@@ -1,6 +1,8 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { arrowUp } from "../icons/paths";
 import Button from "../button/Button";
+import Icons from "../icons/Icons";
+import { linkedinPath, githubPath, instagramPath } from "../icons/paths";
 
 function Footer() {
   const navigate = useNavigate();
@@ -51,14 +53,13 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex justify-self-end mb-5">
-        <Button
-          secendIcon={arrowUp}
-          label="Nach oben"
-          targetId="hero"
-          glow={false}
-          className="mt-10 lg:mt-10"
-        />
+      <div className="flex justify-between mb-5 items-center mt-5 lg:mt-5">
+        <div className="flex gap-4 justify-start h-fit lg:mt-2 ">
+          <Icons href="https://www.linkedin.com/in/skrollan" path={linkedinPath} />
+          <Icons href="https://github.com/Skrollan" path={githubPath} />
+          <Icons href="https://www.instagram.com/skrollan" path={instagramPath} />
+        </div>
+        <Button secendIcon={arrowUp} label="Nach oben" targetId="hero" glow={false} className="" />
       </div>
       <div className="flex justify-between border-t pt-5 border-slate-800">
         <p className="text-xs">&copy;2026 Skrollan Hyodo </p>

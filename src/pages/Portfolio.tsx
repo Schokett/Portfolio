@@ -367,9 +367,9 @@ function Portfolio() {
         </div>
       </section>
 
-      <div className=" border-slate-800 border rounded-full w-fit p-5 backdrop-blur-lg m-auto flex flex-row gap-3 items-center">
+      <div className=" border-slate-800 border rounded-full w-fit p-5 backdrop-blur-lg m-auto flex flex-col xl:flex-row gap-3 items-center">
         <div className=" bg-slate-800 p-2 rounded-full">{rocketIcon}</div>
-        <span className="text-slate-300 mr-1">
+        <span className="text-slate-300 mr-1 text-center">
           Lust auf Zusammenarbeit? Ich freue mich auf Ihre Nachricht!
         </span>
         <a
