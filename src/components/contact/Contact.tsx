@@ -27,7 +27,7 @@ function Contact() {
                 </span>
                 <h2 className="text-white text-4xl font-bold mb-5">Noch Frage?</h2>
                 <div className="bg-cyan-300 w-10 h-1 rounded-full mb-5"></div>
-                <p className="text-slate-400 w-90">
+                <p className="text-slate-400 w-min-60 xl:w-90">
                   Zögern Sie nicht mich zu kontaktieren. Nutzen Sie dafür gerne die unten
                   aufgeführte E-Mail Adresse oder schauen Sie auf meinen Social-Media-Profilen
                   vorbei!
@@ -77,12 +77,12 @@ function Contact() {
               <div className="border-cyan-300 border rounded-full p-5 mb-6 w-fit">
                 <GitHubIcon />
               </div>
-              <span className="text-cyan-300 tracking-widest uppercase text-sm mb-2">
+              <span className="text-cyan-300 tracking-widest uppercase text-sm mb-2 flex">
                 Entdecke Mehr
               </span>
               <h2 className="text-white text-4xl font-bold mb-5">Weitere Erfahrungen</h2>
               <div className="bg-cyan-300 w-10 h-1 rounded-full mb-5"></div>
-              <p className="text-slate-400 w-90">
+              <p className="text-slate-400 w-min-60 xl:w-90">
                 Auf meinem GitHub-Profil finden Sie weitere Projekte, die ich im Laufe der Zeit
                 erstellt habe. Dort können Sie sich auch selbst von meinem Code überzeugen.
               </p>
