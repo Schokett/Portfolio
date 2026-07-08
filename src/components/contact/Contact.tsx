@@ -59,7 +59,7 @@ function Contact() {
               </span>
 
               <div className="flex gap-4 mt-5 justify-start lg:mt-2 ">
-                <Icons href="www.linkedin.com/in/skrollanhyodo" path={linkedinPath} />
+                <Icons href="https://www.linkedin.com/in/skrollanhyodo" path={linkedinPath} />
                 <Icons href="https://github.com/Schokett" path={githubPath} />
                 <Icons href="https://www.instagram.com/hyodo.websitedesigns" path={instagramPath} />
               </div>
