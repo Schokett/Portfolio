@@ -55,7 +55,7 @@ function Footer() {
       </div>
       <div className="flex justify-between mb-5 items-center mt-5 lg:mt-5">
         <div className="flex gap-4 justify-start h-fit lg:mt-2 ">
-          <Icons href="https://www.linkedin.com/in/skrollan" path={linkedinPath} />
+          <Icons href="www.linkedin.com/in/skrollanhyodo" path={linkedinPath} />
           <Icons href="https://github.com/Schokett" path={githubPath} />
           <Icons href="https://www.instagram.com/hyodo.websitedesigns" path={instagramPath} />
         </div>

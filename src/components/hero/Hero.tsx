@@ -103,7 +103,7 @@ function Hero() {
             {/* icons + Btn */}
             <div className="flex flex-col items-center xl:items-start xl:mb-4  xl:gap-4 lg:mt-15 ">
               <div className="flex gap-4 mt-15 justify-center text-center lg:mt-0 ">
-                <Icons href="https://www.linkedin.com/in/skrollan" path={linkedinPath} />
+                <Icons href="www.linkedin.com/in/skrollanhyodo" path={linkedinPath} />
                 <Icons href="https://github.com/Schokett" path={githubPath} />
                 <Icons href="https://www.instagram.com/hyodo.websitedesigns" path={instagramPath} />
               </div>
